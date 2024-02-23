@@ -1,0 +1,462 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+h1 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Start Section Header */
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/bg.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+/* Start NavBar */
+nav{
+  z-index: 100;
+}
+@media (max-width: 992px) {
+  nav{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+nav#navId .active {
+  color: black !important;
+  position: relative;
+}
+nav#navId .active::after {
+  content: "";
+  position: absolute;
+  width: 3.8rem;
+  height: 2px;
+  background-color: black;
+  bottom: 0px;
+  left: 0%;
+}
+header nav .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* End NavBar */
+
+header .home h1 {
+  font-size: 3rem !important;
+}
+header .home h2 {
+  font-size: 4rem !important;
+}
+header .home h2 span {
+  position: relative;
+}
+header .home h2 span::after {
+  content: "|";
+  animation: text 8s infinite ;
+}
+/* Larry Daniels */
+@keyframes text {
+  0%{content: "|";}
+  1%{content: "D|";}
+  2%{content: "De|";}
+  3%{content: "Des|";}
+  4%{content: "Desi|";}
+  5%{content: "Desig|";}
+  6%{content: "Design|";}
+  7%{content: "Designe|";}
+  8%{content: "Designer|";}
+  13%{content: "Designer|";}
+  14%{content: "Designe|";}
+  15%{content: "Design|";}
+  16%{content: "Desig|";}
+  17%{content: "Desi|";}
+  18%{content: "Des|";}
+  19%{content: "De|";}
+  20%{content: "D|";}
+  21%{content: "D|";}
+  22%{content: "De|";}
+  23%{content: "Dev|";}
+  24%{content: "Deve|";}
+  25%{content: "Devel|";}
+  26%{content: "Develo|";}
+  27%{content: "Develope|";}
+  28%{content: "Developer|";}
+  33%{content: "Developer|";}
+  34%{content: "Develope|";}
+  35%{content: "Develop|";}
+  36%{content: "Develo|";}
+  37%{content: "Devel|";}
+  38%{content: "Deve|";}
+  39%{content: "Dev|";}
+  40%{content: "De|";}
+  41%{content: "D|";}
+  42%{content: "|";}
+  43%{content: "L|";}
+  44%{content: "La|";}
+  45%{content: "Lar|";}
+  46%{content: "Larr|";}
+  47%{content: "Larry|";}
+  48%{content: "Larry |";}
+  49%{content: "Larry D|";}
+  50%{content: "Larry Da|";}
+  51%{content: "Larry Dan|";}
+  52%{content: "Larry Dani|";}
+  57%{content: "Larry Danie|";}
+  58%{content: "Larry Daniel|";}
+  59%{content: "Larry Daniels|";}
+  60%{content: "Larry Daniels|";}
+  61%{content: "Larry Daniel|";}
+  62%{content: "Larry Danie|";}
+  63%{content: "Larry Dani|";}
+  64%{content: "Larry Dan|";}
+  65%{content: "Larry Da";}
+  66%{content: "Larry D|";}
+  67%{content: "Larry |";}
+  68%{content: "Larry|";}
+  69%{content: "Larr|";}
+  70%{content: "Lar|";}
+  71%{content: "La|";}
+  72%{content: "L|";}
+  73%{content: "|";}
+  74%{content: "D|";}
+  75%{content: "De|";}
+  76%{content: "Dev|";}
+  77%{content: "Deve|";}
+  78%{content: "Devel|";}
+  79%{content: "Develop|";}
+  84%{content: "Developer|";}
+  85%{content: "Developer|";}
+  86%{content: "Develope|";}
+  87%{content: "Develop|";}
+  88%{content: "Develo|";}
+  89%{content: "Devel|";}
+  90%{content: "Deve|";}
+  91%{content: "Dev|";}
+  92%{content: "De|";}
+  93%{content: "D|";}
+  94%{content: "|";}
+  95%{content: "|";}
+  96%{content: "|";}
+}
+header .home .icons span {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* End Section Header */
+
+/* Start About  */
+
+section#about h3 {
+  font-weight: 900 !important;
+}
+section#about .about-img {
+  position: relative;
+}
+section#about .about-img::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  width: 80%;
+  height: 80%;
+  bottom: -5%;
+  left: 5%;
+  background-repeat: repeat;
+  z-index: -1;
+}
+section#about .all-progress .progress {
+  height: 1.6rem;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+section#about .btn-1:hover {
+  color: #212529;
+  background-color: #ffffff;
+}
+
+/* End About  */
+
+/* Start Section Services  */
+
+section#services h3 {
+  font-weight: 900;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+section#services h3::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  width: 100%;
+  height: 25px;
+  bottom: -8px;
+  z-index: -1;
+  background-repeat: repeat;
+}
+section#services .cards i {
+  width: 4.37rem;
+  height: 4.37rem;
+  background-color: #f4f4f4;
+  transition: 0.5s;
+}
+section#services .cards:hover .icon-card i {
+  background-color: black;
+  color: white;
+}
+
+/* End Section Services  */
+
+/* Start Section Work  */
+
+section#work h3 {
+  font-weight: 900;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+}
+section#work h3::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  width: 100%;
+  height: 25px;
+  bottom: -8px;
+  z-index: -1;
+  background-repeat: repeat;
+}
+section#work #pills-tab .active {
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+section#work #pills-tab .active::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 80%;
+  height: 3px;
+  bottom: -3px;
+  left: 5%;
+}
+section#work #pills-tab button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+section#work .card-caption {
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+section#work .card-caption:hover {
+  opacity: 1;
+}
+section#work .card-caption:hover .icons-work,
+section#work .card-caption:hover h5 {
+  transform: translateY(0);
+}
+section#work .card-caption h5 {
+  transform: translateY(-200%);
+  transition: 0.4s;
+}
+section#work .card-caption .icons-work {
+  transform: translateY(200%);
+  transition: 0.4s;
+}
+section#work .icons-work span {
+  width: 30px;
+  height: 30px;
+}
+section#work .icons-work span i {
+  color: white;
+}
+section#work .icons-work span:hover {
+  background-color: #ffffff !important;
+  border: solid 1px black;
+}
+section#work .icons-work span:hover i {
+  color: black !important;
+}
+section#work .icons-work .icon-1 {
+  cursor: pointer;
+}
+section#work .icons-work .icon-2 {
+  cursor: zoom-in;
+}
+
+/* End Section Work  */
+
+/* Start Section Client */
+
+section#client h3 {
+  font-weight: 900;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+}
+section#client h3::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  width: 100%;
+  height: 25px;
+  bottom: -8px;
+  z-index: -1;
+  background-repeat: repeat;
+}
+section#client figure .image {
+  width: 90px;
+  height: 90px;
+}
+section#client .carousel-indicators {
+  bottom: -5%;
+}
+section#client .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: #869791;
+  border-radius: 50%;
+}
+section#client h5 {
+  font-weight: 900 !important;
+}
+section#client .icons i,
+section#client .icons h5 {
+  color: #343434;
+}
+
+/* End Section Client */
+
+/* Start Section Team */
+
+section#team h3 {
+  font-weight: 900;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+}
+section#team h3::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  width: 100%;
+  height: 25px;
+  bottom: -8px;
+  z-index: -1;
+  background-repeat: repeat;
+}
+
+section#team figure:hover .image-cap {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+section#team article {
+  overflow: hidden;
+}
+section#team article .team-img {
+  transition: 0.5s;
+}
+section#team article:hover .team-img {
+  transform: scale(1.2);
+}
+section#team article .image-cap {
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  transition: 0.5s;
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.5);
+}
+section#team article .image-cap span {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section#team article .image-cap span:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+section#team article .image-cap .team-icon {
+  transition: 0.3s;
+}
+section#team article .image-cap span:hover .team-icon {
+  color: black !important;
+}
+section#team figure .caption {
+  background-color: #5b5b5b;
+}
+
+/* End Section Team */
+
+/* Start Section Contact */
+
+section#contact h3 {
+  font-weight: 900;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+}
+section#contact h3::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  width: 100%;
+  height: 25px;
+  bottom: -8px;
+  z-index: -1;
+  background-repeat: repeat;
+}
+section#contact span {
+  width: 45px;
+  height: 45px;
+}
+section#contact .contact-card:hover .all-icons {
+  background-color: black !important;
+}
+section#contact .contact-card:hover .i-icons {
+  color: white !important;
+}
+section#contact .form-control {
+  box-shadow: none ;
+  border: none ;
+  outline: none;
+}
+section#contact .btn-1:hover {
+  color: #212529;
+  background-color: #ffffff;
+}
+
+/* End Section Contact */
+
+
+/* Start Section footer */
+footer h6{
+  font-size: 0.9rem;
+  color: #748182 !important;
+}
+/* End Section footer */
